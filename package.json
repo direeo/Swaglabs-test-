@@ -1,0 +1,37 @@
+{
+  "name": "cypress-e2e-automation",
+  "version": "1.0.0",
+  "description": "E2E Test Automation for Sauce Demo using Cypress, Cucumber, and Git",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "cypress run",
+    "test:headed": "cypress run --headed",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:edge": "cypress run --browser edge",
+    "test:login": "cypress run --spec 'cypress/e2e/login.cy.js'",
+    "test:cart": "cypress run --spec 'cypress/e2e/shopping-cart.cy.js'",
+    "test:checkout": "cypress run --spec 'cypress/e2e/checkout.cy.js'",
+    "test:sorting": "cypress run --spec 'cypress/e2e/sorting.cy.js'",
+    "test:accessibility": "cypress run --spec 'cypress/e2e/website-accessibility.cy.js'",
+    "test:alternative": "cypress run --spec 'cypress/e2e/alternative-login.cy.js'",
+    "test:all": "cypress run --spec 'cypress/e2e/**/*.cy.js'"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "e2e",
+    "automation",
+    "testing",
+    "sauce-demo"
+  ],
+  "author": "Test Automation Engineer",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.6.0"
+  }
+}
